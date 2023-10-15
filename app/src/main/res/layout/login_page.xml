@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/img_4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="50dp"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_account_circle_24"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/signIn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome "
+        android:layout_marginBottom="20dp"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autofillHints="username"
+        android:hint="Username"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="15dp"
+        />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:autofillHints="password"
+        android:hint="Password"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="15dp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Forgot password?"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="125dp"
+        android:onClick="onLoginClick"
+        android:text="Log IN"
+        android:textColorHint="@color/white"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="or sign in with"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/img" />
+
+
+
+</LinearLayout>
